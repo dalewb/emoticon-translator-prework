@@ -1,4 +1,5 @@
 require "yaml"
+<<<<<<< HEAD
 
 def load_library(library)
   lib = YAML.load_file(library)
@@ -20,6 +21,19 @@ def get_japanese_emoticon(file_path, english_emoticon)
   else 
     "Sorry, that emoticon was not found"
   end 
+=======
+require 'pry'
+
+def load_library
+  lib = YAML.load_file('emoticons.yml')
+  lib 
+end
+
+load_library
+
+def get_japanese_emoticon
+  # code goes here
+>>>>>>> 8408f0f58f900b21ef0fc96dcf02e3b3a0ad777c
 end
 
 def get_english_meaning(file_path, japanese_emoticon)
